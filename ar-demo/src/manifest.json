@@ -1,0 +1,17 @@
+{
+  "name": "AR Demo",
+  "short_name": "AR Demo",
+  "theme_color": "#387ef5",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./",
+  "icons": [
+    {
+      "src": "assets/icon/favicon.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+} 

@@ -1,0 +1,7 @@
+{
+  "name": "ar-demo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
