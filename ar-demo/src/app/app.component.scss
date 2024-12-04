@@ -9,3 +9,15 @@ ion-content {
     --ion-safe-area-top: 0;
     --ion-safe-area-bottom: 0;
   }
+
+  ion-app {
+    height: 100vh;
+  }
+
+  .main-content.ion-page {
+    display: flex !important;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+  }

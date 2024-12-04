@@ -1,0 +1,118 @@
+// :host {
+//   position: fixed;
+//   width: 100vw;
+//   height: 100vh;
+//   top: 0;
+//   left: 0;
+//   --offset-top: 0px !important;
+//   --offset-bottom: 0px !important;
+// }
+
+
+
+// .ar-container {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   z-index: 1000;
+//   transform: scale(1.5);
+// }
+
+// .exit-button {
+//   position: relative;
+//   padding: 1rem;
+//   z-index: 2000;
+// }
+
+
+// .arjs-video {
+//   object-fit: cover !important;
+//   position: fixed !important;
+//   top: 0 !important;
+//   left: 0 !important;
+//   width: 100vw !important;
+//   height: 100vh !important;
+//   transform: scale(2) !important;
+// }
+
+
+
+// .camera-view {
+//   width: 100vw !important;
+//   height: 100vh !important;
+//   object-fit: cover;
+//   position: relative;
+//   top: 0;
+//   left: 0;
+// }
+.start-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.ar-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ar-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+a-scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a-entity {
+  height: 400px;
+  width: 400px;
+}
+
+.a-canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+video {
+  object-fit: cover !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+:host ::ng-deep {
+  a-scene {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
