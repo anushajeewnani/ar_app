@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Movable Box in Markerless AR</title>
+
+    <!-- A-Frame Library -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <!-- AR.js for Markerless AR -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/AR.js/aframe/build/aframe-ar.js"></script> -->
+  </head>
+  <body>
+    <!-- AR scene without marker -->
+      <a-scene vr-mode-ui="enabled: false; dracoDecoderPath: ''"> 
+      <a-assets>
+        <a-asset-item id="glb-asset" src="assets\v-flap.glb"></a-asset-item>
+      </a-assets>
+      <a-light type="ambient" intensity="1"></a-light>
+
+      <!-- <a-light type="directional" position="2 5 -3" intensity="1"></a-light> -->
+
+      <a-entity
+          gltf-model="#glb-asset"  
+          position="0 1 -3"
+        >
+      </a-entity>
+       
+        <!-- <a-animation attribute="rotation" to = "360 0 0" dur="3000" easing="linear" repeat="indefinite"> </a-animation> -->
+      
+
+      <!-- Define the camera -->
+      <!-- <a-camera position="0 1 5"></a-camera> -->
+
+    </a-scene>
+  </body>
+</html>
